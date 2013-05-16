@@ -11,7 +11,7 @@ func main() {
 	if err != nil {
 		log.Fatal("dialing:", err)
 	}
-	args := map[string]string{"Name":"cgrates.com"}
+	args := map[string]string{"Name": "cgrates.com"}
 	reply := map[string]string{}
 	err = client.Call("Apier.GetDomain", args, &reply)
 	if err != nil {

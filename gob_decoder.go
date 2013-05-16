@@ -1,11 +1,11 @@
 package main
 
 import (
-	"bufio" 	
- 	"os" 	
+	"bufio"
 	"encoding/gob"
- 	"fmt"
- 	"labix.org/v2/mgo/bson"
+	"fmt"
+	"labix.org/v2/mgo/bson"
+	"os"
 )
 
 type User struct {
@@ -17,9 +17,9 @@ type User struct {
 
 func main() {
 
-    in := bufio.NewReader(os.Stdin)    
-		dec := gob.NewDecoder(in) 
-        u := &User{}        
-        dec.Decode(u)
-        fmt.Printf("%+v\n", u)
+	in := bufio.NewReader(os.Stdin)
+	dec := gob.NewDecoder(in)
+	u := &User{}
+	dec.Decode(u)
+	fmt.Printf("%+v\n", u)
 }

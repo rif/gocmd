@@ -17,6 +17,7 @@ func main() {
 		fmt.Printf("%q\n", line)
 		return nil
 	})
+	err := ReadLines(b, 60, fmt.Print)
 	fmt.Printf("error: %v\n", err)
 }
 

@@ -6,7 +6,7 @@ import (
 
 type actionTypeFunc func(balanceId string, units float64)
 
-func logAction (balanceId string, units float64) {
+func logAction(balanceId string, units float64) {
 	log.Printf("Balance: %s units %v", balanceId, units)
 }
 
@@ -16,6 +16,6 @@ var (
 	}
 )
 
-func main(){
-	actionTypeMap["test"]("hello",1.1)
+func main() {
+	actionTypeMap["test"]("hello", 1.1)
 }

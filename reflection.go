@@ -1,15 +1,15 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"reflect"
-	"errors"
 )
 
-type Responder struct {}
+type Responder struct{}
 
 func (rs *Responder) GetCost(arg float64, reply *float64) error {
-	*reply = arg*arg
+	*reply = arg * arg
 	return errors.New("test")
 }
 

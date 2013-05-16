@@ -1,5 +1,5 @@
 package main
 
-func equi(A []int){
-	
+func equi(A []int) {
+
 }
